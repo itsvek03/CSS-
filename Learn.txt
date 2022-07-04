@@ -172,3 +172,41 @@ eg: right,left,center
 by default -> left
 
 #------------- Box Model
+
+a) content
+b) padding
+        ->The space between the contents of a box and the borders of a box is known as padding. 
+        Padding is like the space between a picture and the frame surrounding it.
+         In CSS, you can modify this space with the padding property.
+
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+
+c) Border
+        -> A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style, and color:
+        eg:-> p {
+                border: 3px solid coral;
+        }
+        -> Border Radius:
+        -> padding-top
+        -> padding-right
+        -> padding-bottom
+        -> padding-left
+
+d) Margin 
+        -> By default margin is of 8 pixel
+        Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space.
+                margin-top
+                margin-right
+                margin-bottom
+                margin-left
+
+                margin: args1 -> top let bottom right
+                margin: args1 args2 -> top.bottom left,right
+                margin :=> args1 args2 arg3 -> top left,right bottom
+
+e) Dimension
+        -> Width
+        -> Height

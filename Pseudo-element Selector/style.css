@@ -1,0 +1,12 @@
+h1{
+    color:deeppink
+}
+
+p::first-letter{
+    color: deeppink;
+    font-size: 140px;
+}
+
+p::selection{
+    color: deepskyblue;
+}

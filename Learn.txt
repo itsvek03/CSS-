@@ -1,0 +1,174 @@
+----------------------------------- HTML - 1 ----------------------
+
+a)  HTML -> It is used to build the interface
+
+b)  CSS -> To add styles to that webpage
+
+c) Javascript --> To make page more dynamic
+
+        HTML
+a) Intro to HTML
+b) HTML Elements and tags
+c) HTML attributes
+
+HTML Elements and tags
+
+tag => basic unit of HTML
+element => 3 units,namely
+        a) opening tag
+        b) content
+        c) close tags
+
+
+### Attributes
+
+a) It is used to manipulate the properties of an HTML element
+b) Attributes should be enclosed inside the opening tag of the HTML element
+c) It also used to keep additional data about the tag
+
+<div class="w3-center w3-medium" style="color:brown"></div>
+Here :-> div is tag
+        class and style are attributes
+
+### Tables
+a) Table is strict structure that means that u have to keep your data in a very structured manner in defined space
+
+<table>
+        <tr>
+                <th>
+                <td>
+        <tbody>
+Difference between <th> and <td>
+
+rowspan
+colspan
+cell spacing
+cell padding
+
+
+### Make a Form
+
+Form Elements
+
+
+
+################# CSS
+CSS
+Css selectors
+CSS Colors
+CSS typography
+
+
+----------------------------------- HTML - 2 ----------------------
+
+
+-------------------- CSS ------------------
+a) CSS is used to style the webpage.
+b) It helps us in enriching the UX of a particular webpage
+    UX -> User Experience
+            a) User has to do a lot with minimum efforts
+
+
+c) How to implement CSS in webpage
+    a) 3 ways 
+            a) Inline
+                <p style="color:red">Hello</p>
+            b) internal 
+            c) External
+
+d) selectors
+
+    a) id selectors
+    b) class selectors
+    c) attribute selector
+    c) child selectors
+    d) group selectors
+    e) Universal selectors
+    f) Pseudo selectors
+
+
+Precedence Level
+a)ID selector
+b)Class selector
+c) Type Selector
+d) Element Selector
+
+
+# Pseudo-class Selector
+
+a) First-child
+        -> Modify the css of the first child
+        -> Disadvantage : If we change the position of element than it will give an wrong css
+
+b) First-of-type 
+        -> Modify the css of each different type of element of the first type
+
+
+There is same for last-child and last-of-type
+
+c) <a> tag pseudo selector
+        -> visited
+        -> link
+        -> hover
+        -> focus
+
+d) nth:child: paramter eg:-> odd,even,3n
+Eg: -> ul li:nth-child(odd){
+                color: deeppink;
+        }
+
+#Pseudo-element
+
+a) first-letter eg: p::first-letter
+b) first-line
+c) selection
+d) before
+
+# -----  Difference between Pseudo-elements and Pseudo-classes
+
+a) Pseudo-element -> To style part of an element
+b) Pseudo-class -> To style element in an particular state 
+eg:-> hovered Anchor
+
+# Selectors specifiy
+
+eg: -> <h1 class="highlight"> Hello World </h1>
+        h1{
+                color:red
+        }
+
+        .highlight{
+                color:pink
+        }
+
+        // Which color will be used
+--> So there are selector weight
+        eg:-> ID
+           -> Class and attribute selector
+           -> Element Selector eg:section
+
+# Inheritance
+        q) How to stop the inheritance in css ?
+                -> use initial value to a property
+        q) How to explicit inherit the property in css ?
+                -> use inherit value to a property 
+
+#----------------- Text layout ------------
+
+a) Letter-spacing :->
+The letter-spacing property is used to set the horizontal spacing between the individual characters in an element.
+
+b) Word-spacing :->
+You can set the space between words with the word-spacing property.
+
+c) line-height :->
+We can use the line-height property to set how tall we want each line containing our text to be. 
+
+Line height values can be a unitless number, such as 1.2, or a length value, such as 12px , 5% or 2em.
+
+d) text-align :->
+You can aligh the text 
+eg: right,left,center
+by default -> left
+
+#------------- Box Model

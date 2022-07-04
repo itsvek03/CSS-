@@ -1,0 +1,15 @@
+#title{
+    background-color: red;
+}
+
+/* article :first-child{
+    font-style: italic;
+} */
+
+article :first-of-type{
+    font-style: italic;
+}
+
+ul li:nth-child(odd){
+    color: deeppink;
+}

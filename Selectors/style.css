@@ -1,0 +1,17 @@
+
+
+/* // Only for first p element */
+#products > p{
+    color: red;
+}
+
+
+/* // Only for first sibling element */
+/* #products + p{
+    color: red;
+}  */
+
+/* #products ~ p{
+    color: red;
+}  */
+

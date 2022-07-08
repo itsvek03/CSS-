@@ -261,3 +261,50 @@ Difference between Fixed and Sticky:
 Fixed start from the homepage
 while 
 Stciky start from the parent tag
+
+#--------------------- Visibility and z-index ---------------
+
+Visibility :hidden  -> It hides the element but takes the space of it
+
+display:none  -> It hides and does not take any space of it
+
+
+
+
+a) z-index -> It does not work on static position
+        Higher the z-index value the top-most element will be
+
+Eg:
+#box1{
+    width: 200px;
+    height:200px;
+    margin:5px;
+    background-color: blue;
+    border: 3px solid blue;
+    position: relative;
+    top:130px;
+    z-index:30;
+
+}
+
+#box2{
+    width: 200px;
+    height:200px;
+    margin:5px;
+    background-color: red;
+    border: 3px solid red;
+    position: relative;
+    top:20px;
+   z-index: -1;
+   
+   
+}
+
+Difference between visiblity and collapse:
+hidden means the element is invisible, though the space it takes on the page remains.
+
+collapsed means the element is invisible, AND the space it takes on the page is gone, 
+but it only applies to table elements (otherwise, just like hidden).
+
+
+

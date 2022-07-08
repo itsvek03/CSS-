@@ -212,7 +212,7 @@ e) Dimension
         -> Height
 
 
-#------------------ Display and Position ----------
+#------------------ Position ----------
 
 CSS includes properties that change how a browser positions elements. 
 These properties specify where an element is located on a page, if the element can share lines with other elements, and other related attributes.
@@ -307,4 +307,59 @@ collapsed means the element is invisible, AND the space it takes on the page is 
 but it only applies to table elements (otherwise, just like hidden).
 
 
+#------------------- Display -------------------
+Every element on a web page is a rectangular box. 
+The display property in CSS determines just how that rectangular box behaves. 
+The default value for all elements is inline
+
+Inline Elements
+Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content 
+and not requiring a new line after each element.
+ The height and width of these elements cannot be specified in the CSS document
+        eg:-> img  b  i
+ Display : 
+        a) Inline -> default
+                The default display for some elements, such as <em>, <strong>, and <a>, is called inline.
+                inline elements cannot be altered in size with the height or width CSS properties.
+                => We cannot set the width property in inline
+                => It take space how much it required
+
+        b) Block  -> => We can set the width property in block 
+                     => It takes thw hole space
+
+                      =>  When we make display block and put margin auto automatically the it comes to to the center
+                      =>  As we have seen the block-level elements above, that these elements fill the entire width of the page by default, 
+                        but their width property can also be set.
+
+                      => The display property of these elements is block.
+
+                      => Elements that are block-level by default include all levels of heading elements (<h1> through <h6>), <p>, <div> and <footer>.
+        
+        c) Inline-block  => We can set width and take required space it won't take whle space
+
+                box-sizing : border-box;
+                        It takes width,margin,padding of the user
+                Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other 
+                and we can specify their dimensions using the width and height properties.
+
+#--------------------  Float and Clear --------------------
+Float :->
+
+The float property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible.
+The float property is often set using one of the values below:
+
+left - moves, or floats, elements as far left as possible.
+right - moves elements as far right as possible.
+
+
+When there is overlap between the elements use clear to avoid that overlap
+
+
+Clear :->
+The clear property specifies how elements should behave when they bump into each other on the page. It can take on one of the following values:
+
+=> left— the left side of the element will not touch any other element within the same containing element.
+-> right— the right side of the element will not touch any other element within the same containing element.
+=> both— neither side of the element will touch any other element within the same containing element.
+=> none—the element can touch either side.
 

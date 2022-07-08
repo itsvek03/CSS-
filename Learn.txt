@@ -210,3 +210,54 @@ d) Margin
 e) Dimension
         -> Width
         -> Height
+
+
+#------------------ Display and Position ----------
+
+CSS includes properties that change how a browser positions elements. 
+These properties specify where an element is located on a page, if the element can share lines with other elements, and other related attributes.
+
+a) position
+b) Display
+c) z-index
+d) float
+e) clear
+
+Block Level Elements :->
+
+a)  CSS treats each HTML element as if it is in its own box. This box will either be a block-level box or an inline box.
+b)  Block-level boxes start on a new line and act as the main building blocks of any layout. eg:-> h1  p ul li
+c)  Inline boxes flow between surrounding text.
+
+
+position:->
+a) static : (by default)
+b) relative : a) If we add relative position to an element the n we can use top,bottom,left,right property
+              b) This value allows you to position an element relative to its default static position on the web page.
+c) absolute : a)When an element’s position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page. 
+                The element will be positioned relative to its closest positioned parent element, 
+                while offset properties can be used to determine the final position from there.
+              b) It measures the css property with starting of its web page if none of the parents element have absolute property
+                If someone has absolute property then it will start from there
+                Note: first it will check previous parent element have position:absolute property if yes then it will start from there
+                else if not then start from start of web page
+
+
+
+        note :->1)  In relative if we write only position:relative nothing will happen to that element
+                    In relative if we write only position:absolute nothing, it will give some value to z-index
+
+
+
+d) fixed : When an element’s position is set to absolute, as we have seen just above,
+                the element will scroll with the rest of the document when a user scrolls.
+
+
+e) sticky : The sticky value is another position value that keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further. 
+This is done by using the sticky value along with the familiar offset properties, as well as one new one.
+
+
+Difference between Fixed and Sticky:
+Fixed start from the homepage
+while 
+Stciky start from the parent tag
